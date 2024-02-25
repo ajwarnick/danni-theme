@@ -1,0 +1,183 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": false,
+			"customDuotone": false,
+			"customGradient": false,
+            "defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+            "palette": [
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "Dark Gray",
+                    "slug": "dark-gray",
+                    "color": "#4D4D4D"
+                },
+                {
+                    "name": "Light Gray",
+                    "slug": "light-gray",
+                    "color": "#B3B3B3"
+                }
+            ]
+        },
+        "typography": {
+			"customFontSize": false,
+			"dropCap": false,
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textColumns": false,
+			"textDecoration": false,
+			"textTransform": false,
+			"writingMode": false,
+            "fontFamilies": [
+				{
+                    "fontFamily": "AUTHENTIC Sans, sans-serif",
+                    "name": "AUTHENTIC Sans",
+                    "slug": "authentic-sans",
+                    "fontFace": [
+                        {
+                            "fontFamily": "AUTHENTIC Sans",
+                            "fontWeight": "normal",
+                            "fontStyle": "normal",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/font/AUTHENTICSans-90.woff2",
+                                "file:./assets/font/AUTHENTICSans-90.woff"
+                            ]
+                        },
+                        {
+                            "fontFamily": "AUTHENTIC Sans",
+                            "fontWeight": "200",
+                            "fontStyle": "normal",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/font/AUTHENTICSans-60.woff2",
+                                "file:./assets/font/AUTHENTICSans-60.woff"
+                            ]
+                        },
+                        {
+                            "fontFamily": "AUTHENTIC Sans",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/font/AUTHENTICSans-130.woff2",
+                                "file:./assets/font/AUTHENTICSans-130.woff"
+                            ]
+                        },
+                        {
+                            "fontFamily": "AUTHENTIC Sans",
+                            "fontWeight": "800",
+                            "fontStyle": "normal",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/font/AUTHENTICSans-150.woff2",
+                                "file:./assets/font/AUTHENTICSans-150.woff"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fluid": false,
+			"fontSizes": [
+				{
+					"name": "Regular",
+					"slug": "regular",
+					"size": "28px"
+				},
+				{
+					"name": "Header Large",
+					"slug": "large",
+					"size": "48px"
+				},
+				{
+					"name": "Header Extra Large",
+					"slug": "x-large",
+					"size": "64px"
+				}
+			]
+		},
+        "layout": {
+            "contentSize": "900px",
+			"wideSize": "calc(100vw - 280px)"
+        },
+        "spacing": {
+            "blockGap": true
+        }
+    },
+    "styles": {
+        "spacing": {
+            "blockGap": "72px"
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--authentic-sans)",
+            "fontSize": "var(--wp--preset--font-size--regular)"
+        },
+        "elements": {
+			"caption": {
+				"typography": {
+                    "fontFamily": "var(--wp--preset--font-family--authentic-sans)",
+					"fontSize": "16px",
+					"lineHeight": "19px"				}
+			},
+            "link": {
+                ":hover": {
+                  "typography": {
+                    "textDecoration": "underline"
+                  }
+                },
+                ":active": {
+                  "typography": {
+                    "textDecoration": "none"
+                  }
+                }
+              }
+		},
+		"blocks": {
+			"core/separator": {
+				"spacing": {
+					"blockGap": "5px"
+				}
+			},
+            "core/quote": {
+				"spacing": {
+					"padding": {
+						"left": "0px",
+						"right": "0px"
+					}
+				}
+			},
+            "core/pullquote": {
+				"spacing": {
+					"padding": {
+						"left": "0px",
+						"right": "0px"
+					}
+				}
+			},
+            "core/group": {
+				"spacing": {
+                    "padding": "true"
+				}
+			}
+		}
+    },
+    "templateParts": [
+		{
+			"area": "sidebar",
+			"name": "sidebar",
+			"title": "Sidebar"
+		}
+	],
+	"customTemplates": [
+	]
+}

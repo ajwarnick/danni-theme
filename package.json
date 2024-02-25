@@ -4,12 +4,33 @@
   "description": "A theme for my love",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch assets/scss/style.scss:assets/css/style.css",
-    "start": "npm run scss"
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js",
+    "scss:watch": "sass --watch dev/scss:assets/css",
+    "scss:build": "sass dev/scss/style.scss:assets/css/style.css && sass dev/scss/style-editor.scss:assets/css/style-editor.css",
+    "font:build": "cp -R dev/font assets/font",
+    "js:build": "./node_modules/.bin/esbuild dev/js/*.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=assets/js",
+    "js:watch": "./node_modules/.bin/esbuild dev/js/*.js --bundle --watch --target=chrome58,firefox57,safari11,edge16 --outdir=assets/js"
   },
   "author": "Anthony Warnick",
   "license": "MIT",
+  "devDependencies": {
+    "@wordpress/scripts": "^27.2.0",
+    "esbuild": "^0.20.0",
+    "sass": "^1.70.0"
+  },
   "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
