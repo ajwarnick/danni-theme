@@ -32,11 +32,11 @@
 			"dropCap": false,
 			"fontStyle": false,
 			"fontWeight": false,
-			"letterSpacing": false,
-			"lineHeight": false,
-			"textColumns": false,
-			"textDecoration": false,
-			"textTransform": false,
+			"letterSpacing": true,
+			"lineHeight": true,
+			"textColumns": true,
+			"textDecoration": true,
+			"textTransform": true,
 			"writingMode": false,
             "fontFamilies": [
 				{
